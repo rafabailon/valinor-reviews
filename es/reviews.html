@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2310120f'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23c7a66a'%3E%E2%9C%B3%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="Explora las reseñas de fantasía de Valinor Reviews, con puntuaciones independientes y comentarios cuidados.">
+  <title>Reseñas — Valinor Reviews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script defer src="../assets/js/reviews.es.js"></script>
+  <script defer src="../assets/js/site.js"></script>
+</head>
+<body data-page="reviews">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Inicio de Valinor Reviews"><span class="brand-mark" aria-hidden="true">✳</span><span>Valinor <b>Reviews</b></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir navegación"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="reviews.html" data-nav="reviews">Las reseñas</a>
+        <a href="reading-list.html" data-nav="reading">Rutas de lectura</a>
+        <a href="about.html" data-nav="about">Nuestra historia</a>
+        <a href="shelf.html" data-nav="shelf">Mi estantería</a><a class="nav-cta" href="index.html#newsletter">Cartas del archivo <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="page-hero page-hero-reviews">
+      <div class="page-width page-hero-inner">
+        <p class="eyebrow">Las estanterías están abiertas</p>
+        <h1>Encuentra tu próximo <em>rincón lejano.</em></h1>
+        <p>Reseñas independientes de historias que perduran mucho después de la última página.</p>
+        <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span><span aria-current="page">Reseñas</span></div>
+      </div>
+    </section>
+
+    <section class="section page-width review-library" aria-labelledby="library-title">
+      <div class="library-intro">
+        <div>
+          <p class="eyebrow eyebrow-moss">La colección completa</p>
+          <h2 id="library-title">Explora el archivo</h2>
+        </div>
+        <p class="muted-copy">Cada puntuación abre una conversación; no es un veredicto inapelable.</p>
+      </div>
+      <div class="filter-bar">
+        <div class="search-control">
+          <label class="sr-only" for="review-search">Buscar por título, autor o tema</label>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+          <input id="review-search" type="search" placeholder="Título, autor o tema">
+        </div>
+        <label class="select-control"><span class="sr-only">Filtrar por género</span>
+          <select id="genre-filter"><option value="">Todas las rutas</option></select>
+        </label>
+        <label class="select-control"><span class="sr-only">Ordenar reseñas</span>
+          <select id="review-sort">
+            <option value="featured">Destacadas primero</option>
+            <option value="score">Mejor puntuación</option>
+            <option value="title">Título A-Z</option>
+          </select>
+        </label>
+      </div>
+      <div class="library-toolbar">
+        <p id="library-count" class="result-count" aria-live="polite"></p>
+        <button id="random-review" class="text-link random-link" type="button">Sorpréndeme <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="book-grid" id="all-reviews" aria-live="polite"></div>
+      <p id="library-empty" class="empty-state" hidden>No se encontraron historias. Prueba otra búsqueda o ruta.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner page-width"><a class="brand brand-small" href="index.html">Valinor <b>Reviews</b></a><p>Una sala de lectura ficticia para lectores de verdad.</p><a href="index.html#newsletter" class="footer-link">Cartas del archivo ↗</a></div></footer>
+</body>
+</html>
