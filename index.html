@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2310120f'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23c7a66a'%3E%E2%9C%B3%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="Valinor Reviews: thoughtful fantasy book reviews in English and Spanish.">
+  <title>Valinor Reviews — Choose your language</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <style>
+    .language-home { min-height: 100vh; display: grid; place-items: center; padding: 32px 0; }
+    .language-home-inner { width: min(720px, calc(100% - 36px)); }
+    .language-home .brand { margin-bottom: 48px; }
+    .language-home h1 { max-width: 650px; font: 400 clamp(45px, 8vw, 76px)/.98 "Playfair Display", Georgia, serif; }
+    .language-home h1 em { color: var(--moss); }
+    .language-home p { color: var(--muted); }
+    .language-choices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 32px; }
+    .language-choice { padding: 22px; border: 1px solid var(--line); background: #141713; transition: border-color .2s, transform .2s; }
+    .language-choice:hover { transform: translateY(-3px); border-color: var(--gold); }
+    .language-choice strong { display: block; color: var(--parchment); font: 500 28px "Playfair Display", Georgia, serif; }
+    .language-choice span { color: var(--gold); font-size: 11px; }
+    @media (max-width: 520px) { .language-choices { grid-template-columns: 1fr; } .language-home .brand { margin-bottom: 33px; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <main id="main-content" tabindex="-1" class="language-home">
+    <div class="language-home-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✳</span><span>Valinor <b>Reviews</b></span></a>
+      <p class="eyebrow eyebrow-moss">One library, two languages</p>
+      <h1>Stories for the <em>long way home.</em></h1>
+      <p>Choose a language to explore the reviews, reading paths, and stories in our archive.</p>
+      <nav class="language-choices" aria-label="Choose a language">
+        <a class="language-choice" href="es/index.html" lang="es"><strong>Español</strong><span>Entrar en la biblioteca →</span></a>
+        <a class="language-choice" href="en/index.html" lang="en"><strong>English</strong><span>Enter the reading room →</span></a>
+      </nav>
+    </div>
+  </main>
+</body>
+</html>
