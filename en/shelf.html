@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2310120f'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23c7a66a'%3E%E2%9C%B3%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="Your saved fantasy reviews from Valinor Reviews, kept privately in this browser.">
+  <title>My Shelf — Valinor Reviews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script defer src="../assets/js/reviews.en.js"></script>
+  <script defer src="../assets/js/site.js"></script>
+</head>
+<body data-page="shelf">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Valinor Reviews home"><span class="brand-mark" aria-hidden="true">✳</span><span>Valinor <b>Reviews</b></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="reviews.html" data-nav="reviews">The reviews</a><a href="reading-list.html" data-nav="reading">Reading paths</a><a href="about.html" data-nav="about">Our story</a><a href="shelf.html" data-nav="shelf">My shelf</a><a class="nav-cta" href="index.html#newsletter">Letters from the archive <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <section class="page-hero page-hero-shelf">
+      <div class="page-width page-hero-inner">
+        <p class="eyebrow">Kept close for later</p>
+        <h1>Your own <em>reading shelf.</em></h1>
+        <p>Save the reviews you want to revisit. Your shelf lives only in this browser—no account, no tracking.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">My shelf</span></div>
+      </div>
+    </section>
+    <section class="section page-width review-library" aria-labelledby="shelf-title">
+      <div class="library-intro">
+        <div>
+          <p class="eyebrow eyebrow-moss">Saved stories</p>
+          <h2 id="shelf-title">Books to come back to</h2>
+        </div>
+        <p class="muted-copy">Your shelf stays in this browser. Clearing site data will reset it.</p>
+      </div>
+      <p id="shelf-count" class="result-count" aria-live="polite"></p>
+      <div class="book-grid" id="shelf-reviews" aria-live="polite"></div>
+      <div id="shelf-empty" class="empty-state shelf-empty" hidden>
+        <p>Your shelf is waiting for its first story.</p>
+        <a class="button button-gold" href="reviews.html">Browse the reviews <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner page-width"><a class="brand brand-small" href="index.html">Valinor <b>Reviews</b></a><p>A fictional reading room for real-life book lovers.</p><a href="reviews.html" class="footer-link">Browse all reviews ↗</a></div></footer>
+</body>
+</html>
